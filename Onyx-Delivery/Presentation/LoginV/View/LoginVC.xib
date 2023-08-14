@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginVC" customModule="Onyx_Delivery" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="n58-ME-CTn" id="oNa-Ia-XFv"/>
                 <outlet property="loginButton" destination="T4U-8S-BcP" id="O4i-cl-Ujb"/>
                 <outlet property="passwordTextField" destination="Sec-Q0-OmG" id="Jeb-n3-PMY"/>
                 <outlet property="userIDTextField" destination="pF0-bx-Rde" id="NbO-ma-vf9"/>
@@ -109,6 +110,13 @@
                         </label>
                     </subviews>
                 </stackView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="n58-ME-CTn">
+                    <rect key="frame" x="135" y="259" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="1X2-Ml-k2f"/>
+                        <constraint firstAttribute="height" constant="50" id="TFm-Re-bGW"/>
+                    </constraints>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="VvO-24-SOT"/>
             <color key="backgroundColor" red="0.92549020049999997" green="0.98039215800000001" blue="0.99607843159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -123,10 +131,12 @@
                 <constraint firstItem="VvO-24-SOT" firstAttribute="trailing" secondItem="T4U-8S-BcP" secondAttribute="trailing" constant="16" id="TD6-YN-27h"/>
                 <constraint firstItem="SIh-ac-ykx" firstAttribute="bottom" secondItem="rAW-5f-QGl" secondAttribute="bottom" id="V6G-I6-PCk"/>
                 <constraint firstItem="RqD-gP-Hwk" firstAttribute="top" secondItem="2YA-3K-Obc" secondAttribute="bottom" constant="30" id="ZJt-M2-3sF"/>
+                <constraint firstItem="n58-ME-CTn" firstAttribute="centerX" secondItem="qVK-Yh-899" secondAttribute="centerX" id="bA5-yf-57a"/>
                 <constraint firstItem="VvO-24-SOT" firstAttribute="bottom" secondItem="mnr-YZ-Vhd" secondAttribute="bottom" constant="16" id="fZb-Kf-tBf"/>
                 <constraint firstItem="2YA-3K-Obc" firstAttribute="centerX" secondItem="qVK-Yh-899" secondAttribute="centerX" id="iBa-Lr-TAu"/>
                 <constraint firstItem="RqD-gP-Hwk" firstAttribute="centerX" secondItem="qVK-Yh-899" secondAttribute="centerX" id="jY5-Nc-kTd"/>
                 <constraint firstItem="RqD-gP-Hwk" firstAttribute="leading" secondItem="VvO-24-SOT" secondAttribute="leading" constant="16" id="o48-cu-EEd"/>
+                <constraint firstItem="n58-ME-CTn" firstAttribute="centerY" secondItem="qVK-Yh-899" secondAttribute="centerY" id="oSQ-9s-TYL"/>
                 <constraint firstItem="SIh-ac-ykx" firstAttribute="leading" secondItem="VvO-24-SOT" secondAttribute="leading" constant="25" id="sjd-G2-xWw"/>
                 <constraint firstItem="VvO-24-SOT" firstAttribute="trailing" secondItem="iHW-09-810" secondAttribute="trailing" constant="16" id="wPT-tD-rxw"/>
                 <constraint firstItem="mnr-YZ-Vhd" firstAttribute="centerX" secondItem="qVK-Yh-899" secondAttribute="centerX" id="xLt-Tn-5qd"/>
