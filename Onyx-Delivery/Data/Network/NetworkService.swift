@@ -19,7 +19,7 @@ class NetworkService: APIService {
             
             // Check for internet connectivity
             guard Reachability.isConnectedToNetwork() else {
-                observer.onError(NetworkError.noInternet)
+                observer.onError(AppError.noInternet)
                 return Disposables.create()
             }
             
@@ -36,7 +36,7 @@ class NetworkService: APIService {
                 }
                 
                 guard let responseData = data else {
-                    observer.onError(NetworkError.noData)
+                    observer.onError(AppError.noData)
                     return
                 }
                 
