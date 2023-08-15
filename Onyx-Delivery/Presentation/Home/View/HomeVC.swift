@@ -38,6 +38,12 @@ class HomeVC: UIViewController {
         configureNibFileTableView()
         tableViewSubscription()
         viewModel.viewDidLoad()
+        setupUI()
+    }
+    
+    private func setupUI() {
+        let userName = UserDefaults.standard.string(forKey: "userName") ?? ""
+        userNameLabel.text = userName
     }
     
     // MARK: - set Navigation Bar Hidden
