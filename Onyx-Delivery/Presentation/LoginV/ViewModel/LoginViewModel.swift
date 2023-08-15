@@ -37,6 +37,8 @@ class LoginViewModel {
             if data.Result?.ErrMsg == "Successful"{
                 self.successLogin.accept(true)
                 self.loadingBehavior.accept(false)
+                UserDefaults.standard.set(self.userIDTextField.value, forKey: "userID")
+                UserDefaults.standard.set(data.Data?.DeliveryName, forKey: "userName")
             } else {
                 self.loadingBehavior.accept(false)
                 self.successLogin.accept(false)
